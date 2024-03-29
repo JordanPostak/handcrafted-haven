@@ -1,0 +1,16 @@
+/* variables.css */
+
+:root {
+    /* Colors */
+    --primary-color: #007bff; /* Primary color */
+    --secondary-color: #6c757d; /* Secondary color */
+    --background-color: #5c8ed4; /* Background color */
+    --title-color: white;
+    --text-color: #f5b760; /* Text color */
+    --dark-text-color: #c1b5b5; /* Dark text color */
+    --light-gray: #f8f9fa; /* Light gray color */
+    --medium-dark-text-color: #555; /* Medium dark text color */
+    --accent-color: rgb(148, 248, 230); /* Accent color */
+    --accent-dark-color: rgb(108, 60, 60); /* Dark accent color */
+    --accent-light-color: #F5DFBB; /* Light accent color */
+}

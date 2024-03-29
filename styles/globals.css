@@ -1,0 +1,226 @@
+@import url('./variables.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); /* Fallback color if the image is not fully loaded */
+    color: var(--title-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landing-page-wrapper {
+    height: 100vh; /* Set wrapper height to fill viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Make the wrapper a positioning context */
+}
+
+.landing-page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../public/HeroBannerImageGroup6.jpg'); /* Replace 'your-image-url.jpg' with your actual image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Adjust the opacity as needed */
+}
+
+.navLinks {
+    list-style-type: none; /* Removes the bullet points */
+  }
+  
+  .navLinks li {
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border-color: var(--accent-dark-color);
+    border-radius: 25px;
+    border: 2px solid var(--accent-dark-color);
+  }
+  
+  .navLinks li a {
+    text-decoration: none; /* Removes the underline */
+  }
+
+  .home-page-wrapper {
+    min-height: 100vh; /* Set wrapper height to fill viewport */
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+  }
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.productName {
+    text-align: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 0 1px rgba(249, 242, 242, 0.15);
+    border-radius: 8px;
+}
+
+.sellerName {
+    align-self: flex-start;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border-color: var(--accent-dark-color);
+    border-radius: 25px;
+}
+
+hr {
+    height: 5px;
+}
+
+p {
+    color: var(--text-color);
+}
+
+.landing-page {
+    position: relative;
+  }
+  
+  .hero-section {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .logo-image {
+    width: 200px;
+    height: auto;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 1.5rem;
+  }
+  
+  .get-started-button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+  
+  .footer {
+  width: 100%;
+  background-color: #216AD0;
+  position: fixed; /* Fixed position */
+  bottom: 0; /* Stick to the bottom */
+  left: 0;
+}
+
+.footerLinks{
+ 
+    padding: 5px;
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+
+}
+  .footerSocials{
+    display: flex;
+    flex-direction: row;
+
+
+  }
+
+  .footerSocials img{
+    width: 25px;
+    height: 25px;
+    border-color:none;
+    padding: 10px;
+   
+  }
+
+  .footerGroup{
+    font-size: 18px;
+  }
+
+  .header {
+  width: 100%;
+  background-color: #216AD0;
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick to the top */
+  left: 0;
+}
+  
+  .headerLinks {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around; /* Distribute the elements horizontally */
+    align-items: center; /* Vertically center the elements */
+  }
+  
+  .headerSocials {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .headerSocials img {
+    width: 25px;
+    height: 25px;
+    border-color: none;
+    padding: 10px;
+  }
+  
+  .headerGroup {
+    font-size: 18px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 0.5rem; /* Adjust spacing between label and input */
+  }
+  
+  form input,
+  form button {
+    margin-bottom: 1rem; /* Adjust spacing between inputs and buttons */
+  }

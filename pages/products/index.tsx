@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 const ProductPage: React.FC = () => {
   // Sample product data for demonstration
@@ -11,6 +13,7 @@ const ProductPage: React.FC = () => {
 
   return (
     <div>
+      <Header />
       <h1>Products</h1>
       <ul>
         {products.map(product => (
@@ -21,6 +24,7 @@ const ProductPage: React.FC = () => {
           </li>
         ))}
       </ul>
+      <Footer />
     </div>
   );
 };

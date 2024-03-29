@@ -39,6 +39,7 @@ body {
     list-style-type: none; /* Removes the bullet points */
   }
   
+
   .navLinks li {
     display: inline;
     margin: 5px;
@@ -47,9 +48,12 @@ body {
     background-color: var(--accent-color);
     border-color: var(--accent-dark-color);
     border-radius: 25px;
-    border: 2px solid var(--accent-dark-color);
+    border: 3px solid var(--accent-dark-color);
   }
-  
+   .navLinks li.active {
+    background-color: var(--text-color);
+  }
+
   .navLinks li a {
     text-decoration: none; /* Removes the underline */
   }
@@ -107,7 +111,6 @@ button {
     border-color: var(--accent-dark-color);
     border-radius: 25px;
 }
-
 hr {
     height: 5px;
 }

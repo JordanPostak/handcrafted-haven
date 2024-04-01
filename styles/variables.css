@@ -7,11 +7,11 @@ html {
   --secondary-color: #8bc4cd; /* Secondary color */
   --background-color: #a5c3ec; /* Background color */
   --title-color: #384c74; /* Title color */
-  --text-color: #f5c296; /* Text color */
+  --text-color: #f98f33; /* Text color */
   --dark-text-color: #312b53; /* Dark text color */
   --light-gray: #e8e8e8; /* Light gray color */
   --medium-dark-text-color: #555; /* Medium dark text color */
-  --accent-color: rgb(148, 248, 185); /* Accent color */
+  --accent-color: rgb(148, 248, 241); /* Accent color */
   --accent-dark-color: rgb(88, 50, 50); /* Dark accent color */
   --accent-light-color: #F5DFBB; /* Light accent color */
 }

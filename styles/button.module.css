@@ -9,17 +9,17 @@
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow effect */
   }
   
   .button:hover {
     background-color: var(--accent-light-color); /* Change button color on hover */
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
   }
 
   .button.active {
     background-color: var(--text-color);
     transform: scale(0.90);
-    box-shadow: 0 0 5px rgba(14, 17, 82, 0.801); /* Shadow effect */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); /* Shadow effect */
   }

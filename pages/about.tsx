@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Layout from '../components/Layout';
 
 const AboutPage: React.FC = () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <div className="about-content">
         <h1>About Us</h1>
         <p>
@@ -19,8 +17,7 @@ const AboutPage: React.FC = () => {
           ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
         </p>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

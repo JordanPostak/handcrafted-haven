@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Layout from '../components/Layout';
+import formStyle from '../styles/form.module.css';
 
 const Signup: React.FC = () => {
   return (
-    <div className="signup-page-wrapper">
-      <Header />
-
+    <Layout>
+    <div className={formStyle['login-page-wrapper']}>
       {/* Signup Form */}
-      <section className="signup-form">
+      <section className={formStyle['login-form']}>
         <h2>Sign Up</h2>
         {/* Add your signup form here */}
         <form>
@@ -21,10 +20,8 @@ const Signup: React.FC = () => {
           <button type="submit">Sign Up</button>
         </form>
       </section>
-
-      {/* Footer */}
-      <Footer />
     </div>
+    </Layout>
   );
 };
 

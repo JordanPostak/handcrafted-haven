@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Layout from '../../components/Layout';
 
 const ArtisanPage: React.FC = () => {
   // Sample artisan data for demonstration
@@ -12,8 +11,8 @@ const ArtisanPage: React.FC = () => {
   ];
 
   return (
-    <div>
-      <Header />
+      <Layout>
+      <div>
       <h1>Artisans</h1>
       <ul>
         {artisans.map(artisan => (
@@ -24,8 +23,8 @@ const ArtisanPage: React.FC = () => {
           </li>
         ))}
       </ul>
-      <Footer />
-    </div>
+      </div>
+      </Layout>
   );
 };
 

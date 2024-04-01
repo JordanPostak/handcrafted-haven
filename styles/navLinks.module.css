@@ -1,0 +1,16 @@
+
+
+.navLinks {
+    list-style-type: none; /* Removes the bullet points */
+  }
+  
+  .navLinks li {
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .navLinks li a {
+    text-decoration: none; /* Removes the underline */
+  }

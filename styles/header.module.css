@@ -1,0 +1,34 @@
+
+
+.header {
+    width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
+  .headerLinks {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .headerSocials {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .headerSocials img {
+    width: 25px;
+    height: 25px;
+    border-color: none;
+    padding: 10px;
+  }
+  
+  .headerGroup {
+    font-size: 18px;
+  }
+  

@@ -5,7 +5,7 @@ const {
   ratings,
   product_categories,
   categories,
-} = require('../src/app/lib/placeholder-data.js');
+} = require('../utils/placeholder-data.js');
 const bcrypt = require('bcrypt');
 
 async function seedUsers(client) {

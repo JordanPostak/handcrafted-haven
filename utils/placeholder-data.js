@@ -1,3 +1,5 @@
+// utils/placeholder-data.js
+
 // This file contains placeholder data that you'll be replacing with real data in the Data Fetching chapter:
 // https://nextjs.org/learn/dashboard-app/fetching-data
 const users = [
@@ -16,7 +18,8 @@ const users = [
       name: 'Product1',
       description: 'Product Description',
       image_url: '/ar1.png',
-      user_id: '410544b2-4001-4271-9855-fec4b6a6442a'
+      user_id: '410544b2-4001-4271-9855-fec4b6a6442a',
+      category: '76d65c26-f784-44a2-ac19-586678f7c2f2'
     },
   ];
   

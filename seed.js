@@ -1,3 +1,7 @@
+//scrips/seed.js
+require('dotenv').config();
+console.log('POSTGRES_URL:', process.env.POSTGRES_URL);
+
 const { db } = require('@vercel/postgres');
 const {
   users,
@@ -5,7 +9,7 @@ const {
   ratings,
   product_categories,
   categories,
-} = require('../utils/placeholder-data.js');
+} = require('./utils/placeholder-data.js');
 const bcrypt = require('bcrypt');
 
 async function seedUsers(client) {
@@ -58,12 +62,12 @@ async function seedProducts(client) {
     // Create the "products" table if it doesn't exist
     const createTable = await client.sql`
     CREATE TABLE IF NOT EXISTS products (
-    product_id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    description TEXT NOT NULL,
-    image_url VARCHAR(255),
-    user_id UUID NOT NULL
-    category VARCHAR(255) NOT NULL
+      product_id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+      name VARCHAR(255) NOT NULL,
+      description TEXT NOT NULL,
+      image_url VARCHAR(255),
+      user_id UUID NOT NULL,
+      category VARCHAR(255) NOT NULL
   );
 `;
 

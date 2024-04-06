@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/router';
+import Layout from '../../components/Layout';
 
 const ProductPage: React.FC = () => {
   const router = useRouter();
@@ -10,11 +11,13 @@ const ProductPage: React.FC = () => {
   // Fetch product data based on the ID
 
   return (
+    <Layout>
     <div>
       <h1>Product Page</h1>
       <p>Product ID: {id}</p>
       {/* Add product details here */}
     </div>
+    </Layout>
   );
 };
 

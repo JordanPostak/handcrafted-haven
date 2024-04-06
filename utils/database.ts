@@ -18,3 +18,17 @@ export async function getProductById(productId: string) {
     client.release();
   }
 }
+
+export async function getAllProducts() {
+    const client = await db.connect();
+  
+    try {
+      const result = await client.query(
+        `SELECT * FROM products`
+      );
+  
+      return result.rows;
+    } finally {
+      client.release();
+    }
+  }

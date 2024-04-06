@@ -1,16 +1,31 @@
 // pages/products/index.tsx
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Layout from '../../components/Layout';
+import { getAllProducts } from '../../utils/database'; // Import the getAllProducts function
 
 const ProductPage: React.FC = () => {
-  // Sample product data for demonstration
-  const products = [
-    { id: 1, name: 'Product 1' },
-    { id: 2, name: 'Product 2' },
-    { id: 3, name: 'Product 3' },
-  ];
+  const [products, setProducts] = useState<any[]>([]); // State to store products
+
+  useEffect(() => {
+    // Fetch products from the database
+    const fetchProducts = async () => {
+      try {
+        // Fetch all products from the database
+        const fetchedProducts = await getAllProducts();
+        
+        console.log("Fetched Products:", fetchedProducts); // Log fetched products
+
+        // Update state with fetched products
+        setProducts(fetchedProducts);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }
+    };
+
+    fetchProducts(); // Call the fetchProducts function
+  }, []); // Empty dependency array to run once on component mount
 
   return (
     <Layout> {/* Wrap the content with the Layout component */}
@@ -18,9 +33,9 @@ const ProductPage: React.FC = () => {
         <h1>Products</h1>
         <ul>
           {products.map(product => (
-            <li key={product.id}>
-              <Link href={`/products/${product.id}`} passHref>
-                {product.name}
+            <li key={product.product_id}>
+              <Link href={`/products/${product.product_id}`} passHref>
+                <a>{product.name}</a>
               </Link>
             </li>
           ))}
